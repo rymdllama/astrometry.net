@@ -575,6 +575,11 @@ static void after_solved(augment_xylist_t* axy,
         // Note, negative determinant = positive parity.
         double det = sip_det_cd(&wcs);
         logmsg("Field parity: %s\n", (det < 0 ? "pos" : "neg"));
+        logmsg("IRISC\n");
+        logmsg("RA: %3.6f\n", ra);
+        logmsg("DEC: %3.6f\n", dec);
+        logmsg("ROLL: %3.6f\n", orient);
+        logmsg("FOV: %3.6f\n", fieldw);
 
     } else {
         logmsg("Did not solve (or no WCS file was written).\n");
