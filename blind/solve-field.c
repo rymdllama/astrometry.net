@@ -583,6 +583,12 @@ static void after_solved(augment_xylist_t* axy,
 
     } else {
         logmsg("Did not solve (or no WCS file was written).\n");
+        logmsg("IRISC\n");
+        logmsg("RA: 0\n");
+        logmsg("DEC: 0\n");
+        logmsg("ROLL: 0\n");
+        logmsg("FOV: 0\n");
+
     }
 
     // create new FITS file...
